@@ -12,9 +12,9 @@ This applicaiton has 2 modules.
       
  exercise-animal-rest-api
  
-      This REST application supports creating an animal, geting information by animal Id and seaching an animal by type and family. Unit tests are written as well.
+      This REST application supports creating an animal, geting information by animal Id and seaching an animal by type and family. Unit tests are written as well. This application is using H2 in memory data at backend. With current properties, application will be running at port 8100.
       
-      To create an Animal object, following Json should be passed in Post request. Application will assign an family ie. MAMMAL, AMPHIBIAN based on type of the animal.
+      To create an Animal object, following Json should be passed in Post request. Application will assign an family ie. MAMMAL, AMPHIBIAN based on type of the animal. 
       
       {
        "name": "Rocky",
@@ -22,6 +22,10 @@ This applicaiton has 2 modules.
       }
       
       API also supports seaching animmal by type as well as family.  /animal/search endpoint should be called with parameter type or family.
+      
+      /animal/search/?family=MAMMAL
+      /animal/search/?type=Dog
+      
       
       Currently system support following Animal TYpes.
       1. Dog
