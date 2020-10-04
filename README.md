@@ -21,7 +21,7 @@ This applicaiton has 2 modules.
        "type": "Dog"
       }
       
-      API also supports seaching animmal by type as well as family.  /animal/search endpoint should be called with parameter type or family.
+      API also supports seaching animmal by type as well as family.  /animal/search endpoint should be called with parameter type or family with GET request.
       
       /animal/search/?family=MAMMAL
       /animal/search/?type=Dog
